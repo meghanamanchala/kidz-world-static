@@ -140,7 +140,7 @@ for (let i = 0; i < items.length; i++) {
     message += `The total amount is ${finalDollars} Dollars and ${finalCents} Cents`
   console.log(`The total amount is ${finalDollars} Dollars and ${finalCents} Cents`);
   
-    window.open(`https://wa.me/9399457890/?text=${message}`);
+  
     };
   
 
