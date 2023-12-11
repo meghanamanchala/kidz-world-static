@@ -1,8 +1,10 @@
+//Targetting the following cartvalue and cart id and button [3]
 var cartValue = document.getElementById("cart-value");
 var cartButton = document.getElementById("cart");
 
 var addButton = document.getElementsByClassName("button");
 
+//selecting items which contains name,dollars,cents from given html and give quantity =0
 var items = [
   {
     name: "This was our pact",
@@ -90,8 +92,9 @@ var items = [
   },
 ];
 
-
+//create a function to update cart 
 function updateCart() {
+  //let cart value be 0
   let cart = 0;
   for (i = 0; i< items.length; i++) {
     cart = cart + items[i].quantity;
@@ -140,6 +143,7 @@ for (let i = 0; i < items.length; i++) {
     message += `The total amount is ${finalDollars} Dollars and ${finalCents} Cents`
   console.log(`The total amount is ${finalDollars} Dollars and ${finalCents} Cents`);
   
+  window.open(`https://wa.me/9456789567/?text=${message}`);
   
     };
   
